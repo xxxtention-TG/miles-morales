@@ -121,21 +121,25 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "🔎Search Here", switch_inline_query_current_chat=''
+                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", switch_inline_query_current_chat=''
+                            )
+                        InlineKeyboardButton
+                            (
+                                "🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''
                             ),
                         InlineKeyboardButton
                             (
-                                "🤖More Botz", url="https://t.me/MT_Botz"
+                                "𝖴𝗉𝖽𝖺𝗍𝖾𝗌", url="https://t.me/movieshub_group"
                             )
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "🤔Help", callback_data="help"
+                                "⏺️ Help", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
-                                "About🤠", callback_data="about"
+                                "😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about"
                             )
                     ]
                 ]
