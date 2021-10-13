@@ -84,10 +84,11 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ Deploy Now 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url="https://t.me/movieshub_group'),
+                        InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url="https://t.me/movies_hub66')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('𝙎𝙀𝘼𝙍𝘾𝙃 𝙃𝙀𝙍𝙀', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -120,9 +121,11 @@ async def start(bot, message):
                 [
                     [
                         InlineKeyboardButton
-                            (
-                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", switch_inline_query_current_chat=''
-                            )
+                           (
+                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url="https://t.me/CinemaaKottaka"
+                           )
+                    ],
+                    [
                         InlineKeyboardButton
                             (
                                 "🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''
