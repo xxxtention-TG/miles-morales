@@ -137,7 +137,7 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                            (
-                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url="https://t.me/CinemaaKottaka"
+                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url="https://t.me/movie_2robot?startgroup=true"
                            )
                     ],
                     [
