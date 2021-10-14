@@ -104,11 +104,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💬 𝙂𝙍𝙊𝙐𝙋', url="https://t.me/movieshub_group'),
-                        InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url="https://t.me/movies_hub66')
-                    ],
-                    [
-                        InlineKeyboardButton('𝙎𝙀𝘼𝙍𝘾𝙃 𝙃𝙀𝙍𝙀', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('𝖲𝖤𝖠𝖱𝖢𝖧 𝖠𝖦𝖠𝖨𝖭', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
