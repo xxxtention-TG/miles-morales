@@ -133,13 +133,15 @@ async def group(client, message):
             LuciferMoringstar=await client.send_message(
             chat_id = message.chat.id,
             text=f"""
-👋Hey {message.from_user.mention}
-If this movie is not in our database you will not get that movie..
-Otherwise, the spelling of the name of the requested movie may not be correct...
-So you go to google and check the spelling of the name of the movie you want.
-ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
-അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
-അതിനാൽ നിങ്ങൾ ഗൂഗിളിൽ പോയി നിങ്ങൾക്ക് ആവശ്യമുള്ള സിനിമയുടെ പേരിന്റെ സ്പെല്ലിംഗ് പരിശോധിക്കുക""",
+<b>👋Hey {message.from_user.mention}</b>
+
+<b>Sorry, No Movie/Series Related to the Given Word Was Found 🥺</b>
+
+<b>Please Go to Google and Confirm the Correct Spelling 🙏</b>
+
+<b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>
+
+<b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File:-@admins</b>""",
             parse_mode="html",
             reply_to_message_id=message.message_id
         )
