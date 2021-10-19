@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🎬 Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🎬 Title : {search}**\n**⭐ Rating : {random.choice(RATING)}**\n**🎭 Genre : {random.choice(GENRES)}**\n**Uploaded by {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -141,21 +141,11 @@ async def group(client, message):
 
 <b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>
 
-<b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File:-@admins</b>""",
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/MOVIESHUB_GROUP")
-                    ],
-                    [
-                        InlineKeyboardButton("Hᴇʟᴘ", callback_data="instruction")
-                    ]    
-                ]
-            )
-        )
-
+<b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File :- @admins</b>""",
+            
             parse_mode="html",
             reply_to_message_id=message.message_id
+        )
             return
         if not btn:
             return
@@ -384,8 +374,3 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer()
     else:
         await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
-
-        elif query.data == "instruction":
-            await query.answer()
-    else:
-        await query.answer("You can only get the movie if you google the spelling of the movie and hit the group correctly 😉",show_alert=True)
