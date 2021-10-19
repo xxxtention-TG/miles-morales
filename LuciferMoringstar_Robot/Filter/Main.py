@@ -143,10 +143,16 @@ async def group(client, message):
 
 <b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File:-@admins</b>""",
             reply_markup=InlineKeyboardMarkup(
+                [
+                    [
+                        InlineKeyboardButton("Gʀᴏᴜᴘ", url="https://t.me/MOVIESHUB_GROUP")
+                    ],
+                    [
+                        InlineKeyboardButton("Hᴇʟᴘ", callback_data="instruction")
+                    ]    
                 ]
-                     InlineKeyboardButton('Hᴇʟᴘ', callback_data="instruction")
-                ]
-                ]
+            )
+         )
 
             parse_mode="html",
             reply_to_message_id=message.message_id
