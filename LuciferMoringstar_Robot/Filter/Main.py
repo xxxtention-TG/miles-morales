@@ -152,7 +152,7 @@ async def group(client, message):
                     ]    
                 ]
             )
-         )
+        )
 
             parse_mode="html",
             reply_to_message_id=message.message_id
