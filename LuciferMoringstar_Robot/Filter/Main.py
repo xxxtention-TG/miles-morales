@@ -147,11 +147,6 @@ async def group(client, message):
 <b>Click Here To 👉 <a href='https://www.google.com'>🔍 Search 🔎</a> </b>
 
 <b>✍Or Your Spelling Is Correct Report To Admins For Add Requested File :- @admins</b>""",
-      buttons = [
-                [
-                    InlineKeyboardButton('🅾️🆆🅽🅴🆁', callback_data="instruction")
-                ]
-                ]
             
             parse_mode="html",
             reply_to_message_id=message.message_id
@@ -252,7 +247,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ 𝗕𝗔𝗖𝗞", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⏪ 𝗕𝗔𝗖𝗞", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("𝗡𝗘𝗫𝗧 ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 𝗣𝗔𝗚𝗘𝗦 {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -290,7 +285,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ 𝗕𝗔𝗖𝗞", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⏪ 𝗕𝗔𝗖𝗞", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝗡𝗘𝗫𝗧 ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"📃 𝗣𝗔𝗚𝗘𝗦 {int(index)}/{data['total']}", callback_data="pages")]
@@ -381,11 +376,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
 
         elif query.data == "pages":
-            await query.answer()
-    else:
-        await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
-
-        elif query.data == "instruction":
             await query.answer()
     else:
         await query.answer("കൌതുകും ലേശം കൂടുതൽ ആണല്ലേ👀",show_alert=True)
