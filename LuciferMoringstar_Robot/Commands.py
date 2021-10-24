@@ -130,13 +130,13 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                            (
-                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕", url="https://t.me/movie_2robot?startgroup=true"
+                                "➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗍 𝖦𝗋𝗈𝗎𝗉 ➕", url="https://t.me/movie_2robot?startgroup=true"
                            )
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "🔎 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''
+                                "🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾", switch_inline_query_current_chat=''
                             ),
                         InlineKeyboardButton
                             (
@@ -146,11 +146,11 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "⏺️ Help", callback_data="help"
+                                "🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋", callback_data="dev"
                             ),
                         InlineKeyboardButton
                             (
-                                "😊 𝖠𝖻𝗈𝗎𝗍", callback_data="about"
+                                "⏺️ 𝖧𝖾𝗅𝗉", callback_data="eby"
                             )
                     ]
                 ]
