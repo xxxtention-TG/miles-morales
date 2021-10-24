@@ -313,6 +313,90 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
+        elif query.data == "eby":
+            buttons = [
+                [
+                    InlineKeyboardButton('𝖠𝗎𝗍𝗈 𝖥𝗂𝗅𝗍𝖾𝗋', callback_data="auto"),
+                    InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data="about")
+                ],
+                [
+                    InlineKeyboardButton('𝖡𝖺𝗌𝗂𝖼', callback_data="basic"),
+                    InlineKeyboardButton('𝖤𝗑𝗍𝗋𝖺', callback_data="ebm")
+                ],
+                [
+                    InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data="info"),
+                    InlineKeyboardButton('𝖲𝗈𝗎𝗋𝖼𝖾', callback_data="source")
+                ],
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>എന്നെ കൊണ്ട് ചെയ്യാൻ കഴിയുന്ന കുറച്ചു കാര്യങ്ങൾ ആണ് താഴേ കൊടുത്തിട്ടുള്ളത്..</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "auto":
+            buttons = [
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="eby"),
+                    InlineKeyboardButton('🏘️ 𝖧𝗈𝗆𝖾', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>Help for auto filter\n\nHere Is the available commands in auto filter\n\n• /index -  add a files to data base\n• /channel - get the  connected channels</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "home":
+            buttons = [
+                [
+                    InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖬𝖾 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url= "https://t.me/MH_AUTO_FILTER_5BOT?startgroup=true")
+                ],
+                [
+                    InlineKeyboardButton('🔍 𝖲𝖾𝖺𝗋𝖼𝗁 𝖧𝖾𝗋𝖾', switch_inline_query_current_chat=''),
+                    InlineKeyboardButton('updates', url='https://t.me/movieshub_group')
+                ],
+                [
+                    InlineKeyboardButton('🕵️‍♂️ 𝖢𝗋𝖾𝖺𝗍𝗈𝗋', callback_data="dev"),
+                    InlineKeyboardButton('ℹ️ 𝖧𝖾𝗅𝗉', callback_data="eby")
+                ]
+                ]
+            await query.message.edit(text="<b>ʏᴏ.. ʏᴏ..🙋 ɪ'ᴍ [sᴏɴɪᴄ](https://t.me/mh_auto_filter_5bot), ʏᴏᴜ ᴄᴀɴ ᴜsᴇ ᴍᴇ ᴀs ᴀ ᴀᴜᴛᴏ-ғɪʟᴛᴇʀ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ....\n\nɪᴛs ᴇᴀsʏ ᴛᴏ ᴜsᴇ ᴍᴇ; ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ, ᴛʜᴀᴛs ᴀʟʟ, ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ...🤓\n\nᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ [ᴅᴀʀᴋ ᴀɴɢᴇʟ](https://t.me/darkz_angel)</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "ebm":
+            buttons = [
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="eby"),
+                    InlineKeyboardButton('🏘️ 𝖧𝗈𝗆𝖾', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>ʙᴏᴛ ᴏᴡɴᴇʀ ᴏɴʟʏ\n\n◯ /broadcast ʀᴇᴘʟᴀʏ ᴀɴʏ ᴍᴇssᴀɢᴇ ᴏʀ ᴍᴇᴅɪᴀ\n\n◯ /total ʜᴏᴡ ᴍᴀɴʏ ғɪʟᴇs ᴀᴅᴅᴇᴅ ɪɴ ᴅᴀᴛᴀʙᴀsᴇ\n\n◯ /logger ɢᴇᴛ ʟᴏɢs\n\n◯ /delete ᴅᴇʟᴇᴛᴇ ғɪʟᴇ ғʀᴏᴍ ᴅᴀᴛᴀʙᴀsᴇ</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "basic":
+            buttons = [
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="eby"),
+                    InlineKeyboardButton('🏘️ 𝖧𝗈𝗆𝖾', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>ʙᴀsɪᴄ ᴄᴏᴍᴍᴀɴᴅs\n\n◯ /start : ᴄʜᴇᴄᴋ ɪғ ᴀᴍ ᴀʟɪᴠᴇ ᴏʀ ᴅᴇᴀᴅ\n\n◯ /about : ᴀʙᴏᴜᴛ ᴍᴇ</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "info":
+            buttons = [
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="eby"),
+                    InlineKeyboardButton('🏘️ 𝖧𝗈𝗆𝖾', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>ᴜsᴇʀ ɪɴғᴏ\n\n◯/info = ɢᴇᴛ ᴜsᴇʀ ɪɴғᴏ</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+
+        elif query.data == "dev":
+            buttons = [
+                [
+                    InlineKeyboardButton('1 𝖣𝖾𝗏', url='https://t.me/darkz_angel'),
+                    InlineKeyboardButton('2 𝖣𝖾𝗏', url='https://t.me/elon_musk3')
+                ],
+                [
+                    InlineKeyboardButton('«« 𝖡𝖺𝖼𝗄', callback_data="eby"),
+                    InlineKeyboardButton('🏘️ 𝖧𝗈𝗆𝖾', callback_data="home")
+                ]
+                ]
+            await query.message.edit(text="<b>ᴍʏ ᴅᴇᴠs 👇👇</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data.startswith("pr0fess0r_99"):
             ident, file_id = query.data.split("#")
