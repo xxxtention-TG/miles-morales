@@ -398,7 +398,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ]
             await query.message.edit(text="<b>ᴍʏ ᴅᴇᴠs 👇👇</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
-        elif query.data.startswith("pr0fess0r_99"):
+        elif query.data.startswith("subinps"):
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
             for files in filedetails:
